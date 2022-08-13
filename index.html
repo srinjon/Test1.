@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+</script>
+    <div class="box-container">
+        <form action="/" id="form" method="get" name="myForm" onsubmit="return myFun()">
+      <table>
+        <tr>
+            <td >Select your source:</td>
+            <td style="font-size: 43px;">|</td>
+            <td>Google Cloud storage</td>
+        </tr>
+   <tr>
+            <td>Provide a name for pipeline:</td>
+            <td style="font-size: 43px;">|</td>
+            <td class="width"><input class="message" type="text" name="Letter" value="" placeholder="e.g.,cust_shop_energy_gkateway001" minlength="5"onkeypress="return blockSpecialChar(event)" ></td>
+            <br>
+        </tr>
+   
+        <tr>
+            <td> GCS project name:</td>
+            <td style="font-size: 43px;">|</td>
+            <td class="width" ><input type="text" placeholder="project-id" minlength="5" onkeypress="return blockSpecialCharName(event)"></td>
+        </tr>
+        <tr>
+            <td>GCS bucket name:</td>
+            <td style="font-size: 43px;">|</td>
+            <td class="width" > <input type="text" class="message" placeholder="gs://your-bucket" name="Bucket" minlength="5" onkeypress="return blockSpecialCharBucket(event)"></td>
+        </tr>
+        <tr>
+            <td> Input Cloud Storage Files(s):</td>
+            <td style="font-size: 43px;">|</td>
+            <td style="padding-top:2rem ;"><input style="font-size: 12px; padding-top: 0.5rem;" type="file" placeholder="GCS location of your Files" minlength="5" onkeypress="return blockSpecialChar(event)">
+            <p style="font-size: 15px;">Example: gs://your-bucket/your-files/01.csv</p></td>
+        </tr>
+        <tr>
+            <td> GCS credentials:</td>
+            <td style="font-size: 43px;">|</td>
+            <td class="different"><input type="password" minlength="5" onkeypress="return blockSpecialChar(event)"></td>
+        </tr>
+        <tr>
+            <td>  Run Every:</td>
+            <td style="font-size: 43px;">|</td>
+            <td style="padding-top:0.5rem ;"> <input type="number" placeholder="(in minutes)" minlength="5" onkeypress="return blockSpecialChar(event)" ></td>
+        </tr>
+        <tr>
+            <td style="padding-top: 1rem";><button class="create" type="submit">Create</button></td>
+            <td style="font-size: 50px;"></td>
+            <td style="padding-right: 2rem; padding-top: 1rem;"><button class="cancel" type="reset">Cancel</button></td>
+        </tr>
+         
+      </table>
+    </form>
+      
+        <!-- <h6> Should have below mentioned validations for all the fields:</h6>
+        <ul>
+        <li>Minimum Length 5</li>
+        <li>No special characters</li>
+        <li>Cannot start with '-', '_', '+'</li>
+    
+      </ul> -->
+      
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

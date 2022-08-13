@@ -1,0 +1,88 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h6{
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+    font-size: 17px;
+    padding-left: 37px;
+}
+.box-container{
+    /* display: flex; */
+    border: 1px solid black;
+    width: 377px;
+    height: auto;
+    margin: auto;
+    margin-top: 3rem;
+    font-size: 19px;
+    padding: 8px 4px;
+    padding-bottom: -5px;
+    margin-bottom: 3rem;
+    
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+td{
+    text-align: right;
+}
+button{
+    width: 100%;
+    background-color: rgb(52, 116, 156);
+    border: none;
+  
+    
+}
+/* button:hover{
+    background-color: white;
+} */
+input{
+    font-size: large;
+    height: 35px;
+    display: block;
+    background-color: rgb(236, 237, 237);
+    border: none;
+    padding-left: 0.2rem;
+}
+p{
+    text-align: left;
+    color: grey;
+}
+::placeholder
+{
+    font-size: 13px;
+}
+.width{
+    padding-top:0.5rem;
+    width: 100px; 
+}
+.create{
+    width: 105px;
+    height: 32px;
+   
+}
+.cancel{
+    height: 32px;
+    
+}
+.different input{
+    background-color: rgb(189, 184, 184);
+}
+.different{
+    
+    padding-top: 0.5rem;
+    width: 50%;
+}
+tr{
+    font-size: 16px;
+    height: auto;
+  margin-bottom: 0px;
+
+}
